@@ -20,13 +20,12 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "precise-commits": "precise-commits",
-    "cm": "git-cz"
+    "precise-commits": "precise-commits"
   },
   "husky": {
     "hooks": {
       "pre-commit": "precise-commits",
-      "prepare-commit-msg": "exec < /dev/tty && npm run cm --hook || true"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   },
   "eslintConfig": {
